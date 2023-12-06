@@ -28,7 +28,7 @@ header {
 }
 
 .nav-link:hover {
-    background-color: orange;
+    background-color: #ddd;
     position: relative;
     transition: 1s;
 }
@@ -183,7 +183,6 @@ button {
     justify-content: center;
     background-color: transparent;
     /* border: 2px solid black; */
-    border-radius: 100px;
 }
 
 .copyright {

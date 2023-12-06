@@ -175,7 +175,7 @@ const data = [
       id: 20,
       name: "NVIDIA® GeForce RTX™ 4090",
       img: "https://i.postimg.cc/WznjLbjW/msi-geforce-rtx-4090-gaming-x-trio-24gb-1500px-v1-0001.jpg",
-      amt: 37999,
+      amt: 37999.99,
       seller: "INCREDIBLE CONNECTIONS",
       catagory: "Graphics Card",
     },

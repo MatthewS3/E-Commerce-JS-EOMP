@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #111;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#000;
+    padding: 0;
+}
+
+.nav-items {
+    display: flex;
+}
+  
+.nav-item {
+    margin: 0 2rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    position: relative;
+    background:hsl(9, 94%, 61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    position: relative;
+    transition: 1s;
+}
+
+#productList {
+    list-style-type: none;
+    padding: 0;
+    color: #ddd;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    background-color: hsl(9, 94%, 61%);
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#addProductForm {
+    margin-top: 20px;
+    color: hsl(9, 94%, 61%);
+}
