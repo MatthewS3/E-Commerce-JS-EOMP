@@ -197,7 +197,8 @@ const data = [
       <span class="name">${product.name}</span>
       <span class="amt">R${product.amt}</span>
       <span class="seller">${product.seller}</span>
-      <button class='btn'>Add to Cart</button>
+      <button class='btn' onclick="addToCart(${product.id})">Add to Cart</button>
+
     </div>
   </div>`
         )
@@ -208,6 +209,13 @@ const data = [
       productsContainer.innerHTML = "<h3>No Products Available</h3>";
     }
   }
+
+  function addToCart(id) {
+    const product = data.find((item) => item.id === id);
+    const cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+    cart.push(product);
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
   
   function setCategories() {
     const allCategories = data.map((product) => product.catagory);
