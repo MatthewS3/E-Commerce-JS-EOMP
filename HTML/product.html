@@ -45,11 +45,50 @@
       </div>
     </section>
     <footer>
-        <div class="container end-footer">
-            <div class="copyright">&copy; COPYRIGHT 2023  •  <b>TakeAlittle</b></div>
-            <a class="designer" href="#">Matthew Swain</a>
+      <div class="content">
+        <div class="top">
+          <div class="logo-details">
+            <span class="logo_name">TakeAlittle</span>
           </div>
-      
+        </div>
+        <div class="link-boxes">
+          <ul class="box">
+            <li class="link_name">Links</li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/HTML/about.html">About</a></li>
+            <li><a href="/HTML/checkout.html">Checkout</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+            <li><a href="/HTML/admin.html">Admin</a></li>
+  
+          </ul>
+          <ul class="box">
+            <li class="link_name">Recommended</li>
+            <li><a href="{% url 'category' 6 %}">India</a></li>
+            <li><a href="{% url 'category' 5 %}">Art and Culture</a></li>
+            <li><a href="{% url 'category' 11 %}">People</a></li>
+            <li><a href="{% url 'category' 2 %}">Travel</a></li>
+  
+          </ul>
+          <ul class="box">
+            <li class="link_name">Legal Info</li>
+            <li><a href="{% url 'licence' %}">Licence</a></li>
+            <li><a href="{% url 'terms' %}">Terms and Conditions</a></li>
+            <li><a href="{% url 'privacy' %}">Privacy Policies</a></li>
+  
+          </ul>
+          <ul class="box">
+            <li class="link_name">Contact</li>
+            <li><a target="on_blank" href="tel:+919079680135">+91 9079680135</a></li>
+            <li><a target="on_blank" href="mailto:'connectpicoindia@gmail.com'">contactpicoindia@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="bottom-details">
+        <div class="bottom_text">
+          <span class="copyright_text"> &copy; Copyright 2023 <a href="#">TakeAlittle</a></span>
+        </div>
+      </div>
     </footer>
 
     <script src="/javascript/product.js"></script>

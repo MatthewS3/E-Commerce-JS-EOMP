@@ -434,10 +434,11 @@
 }
 
 .container {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
 }
 
@@ -449,6 +450,7 @@
   margin: 20px;
   border-radius: 2px;
   box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+  border-radius: 50px;
 }
 
 .card-image {
@@ -458,16 +460,26 @@
 
 .card-image img {
   width: 350px;
-  height: 300px;
+  height: 290px;
   visibility: hidden;
+  object-fit: cover;
+  border-radius: 50px;
 }
 
 .card-title span {
   visibility: hidden;
 }
 
-.yellow-surname {
-  color: #ddd;
+.green-surname {
+  color: seagreen;
+}
+
+.orange-surname {
+  color: orange;
+}
+
+.blue-surname {
+  color: teal;
 }
 
 .card-description span {
@@ -535,6 +547,10 @@
   );
   transform: translateX(-100%);
   animation: loading 1.5s infinite;
+}
+
+.TA {
+  color: hsl(9, 94%, 61%);
 }
 
 .info {
