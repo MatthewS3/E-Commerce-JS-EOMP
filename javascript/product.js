@@ -1,5 +1,5 @@
 let products = []
-const data = [
+let data = [
     {
       id: 1,
       name: "Xbox Series X Halo Infinite Edition 1Tb",
@@ -42,7 +42,7 @@ const data = [
       img: "https://i.postimg.cc/m2PcBYxQ/matestation-x-series-1.jpg",
       amt: 25999.99,
       seller: "HUAWEI STORE",
-      catagory: "Desktop",
+      catagory: "Moniter",
     },
   
     {
@@ -85,7 +85,7 @@ const data = [
       id: 10,
       name: "T-Dagger ROADMASTER 8000DPI Gaming Mouse",
       img: "https://i.postimg.cc/tCDyB5Xh/gaming-mouse.webp",
-      amt: 500.00,
+      amt: 499.99,
       seller: "PEP STORES",
       catagory: "Mouse",
     },
@@ -94,7 +94,7 @@ const data = [
       id: 11,
       name: "SteelSeries Apex 3 TKL Gaming Keyboard",
       img: "https://i.postimg.cc/sgXzqhXb/gaming-mech-keyboard.webp",
-      amt: 1500.00,
+      amt: 1499.99,
       seller: "INCREIBLE CONNECTIONS",
       catagory: "KeyBoard",
     },
@@ -179,14 +179,304 @@ const data = [
       seller: "INCREDIBLE CONNECTIONS",
       catagory: "Graphics Card",
     },
+
+// <<<<<============================= NEW PRODUCTS =============================>>>>>
+
+    {
+      id: 21,
+      name: "Skullcandy Mod True Wireless Buds",
+      img: "https://i.postimg.cc/jjjYL2HJ/shopping-1.webp",
+      amt: 1199.99,
+      seller: "GAME",
+      catagory: "Accessories",
+    },
+  
+    {
+      id: 22,
+      name: "JBL Flip Essenial 2 Portable Speaker",
+      img: "https://i.postimg.cc/qMQMtYtt/shopping-2.webp",
+      amt: 1999.99,
+      seller: "MACRO",
+      catagory: "Accessories",
+    },
+  
+    {
+      id: 23,
+      name: "Samsung Galaxy Z Flip5 256GB",
+      img: "https://i.postimg.cc/rsDsMNJn/shopping-3.webp",
+      amt: 19999.99,
+      seller: "HI-FI CORP",
+      catagory: "Phone",
+    },
+
+    {
+      id: 24,
+      name: "SAMSUNG 43inch Odyssey Neo G7 4K",
+      img: "https://i.postimg.cc/9ffs086B/shopping-4.webp",
+      amt: 8499.99,
+      seller: "GAME",
+      catagory: "Moniter",
+    },
+
+    {
+      id: 25,
+      name: "Intel Core i5 + GeForce RTX 4060 Gaming PC",
+      img: "https://i.postimg.cc/sfpBwwLm/shopping-5.webp",
+      amt: 22999.99,
+      seller: "MACRO",
+      catagory: "Desktop",
+    },
+  
+    {
+      id: 26,
+      name: "Gigabyte Nvidia GeForce RTX 3080 GV",
+      img: "https://i.postimg.cc/kg139P2c/shopping-6.webp",
+      amt: 8499.99,
+      seller: "GAME",
+      catagory: "Graphics Card",
+    },
+  
+    {
+      id: 27,
+      name: "Xbox One X 1Tb 4k Capable",
+      img: "https://i.postimg.cc/BbrkY2nP/shopping-7.webp",
+      amt: 4399.99,
+      seller: "PICK N PAY",
+      catagory: "Console",
+    },
+
+    {
+      id: 28,
+      name: "Air Jordan 1 Mid Men's Shoes - Purple",
+      img: "https://i.postimg.cc/W17vYfLG/shopping-9.webp",
+      amt: 2499.99,
+      seller: "MACRO",
+      catagory: "Shoes",
+    },
+
+    {
+      id: 29,
+      name: "Playstation 4 Pro 1Tb Black",
+      img: "https://i.postimg.cc/PJp0QSTk/shopping-8.webp",
+      amt: 4799.99,
+      seller: "GAME",
+      catagory: "Console",
+    }, 
+
+    {
+      id: 30,
+      name: "Logitech G Pro X Superlight Wireless - Black",
+      img: "https://i.postimg.cc/ydmD8CDD/shopping-20.webp",
+      amt: 1699.99,
+      seller: "PEP STORES",
+      catagory: "Mouse",
+    },
+
+    {
+      id: 31,
+      name: "Olive Tree - K3 RGB Wired Mechanical Gaming Keyboard",
+      img: "https://i.postimg.cc/L5n9cdFY/shopping-30.webp",
+      amt: 599.99,
+      seller: "INCREIBLE CONNECTIONS",
+      catagory: "KeyBoard",
+    },
+  
+    {
+      id: 32,
+      name: "Apple iPhone 15 Pro Max 512GB",
+      img: "https://i.postimg.cc/QN0jjdf2/shopping-27.webp",
+      amt: 31499.99,
+      seller: "MACRO",
+      catagory: "Phone",
+    },
+  
+    {
+      id: 33,
+      name: "Nike Air More Uptempo Black White",
+      img: "https://i.postimg.cc/G3Bb3QGR/shopping-11.webp",
+      amt: 3999.99,
+      seller: "INCREDIBLE CONNECTIONS",
+      catagory: "Shoes",
+    },
+
+    {
+      id: 34,
+      name: "Samsung LF24T350 24inch LED IPS Monitor",
+      img: "https://i.postimg.cc/FRYV1RjT/shopping-26.webp",
+      amt: 1499.99,
+      seller: "INCREDIBLE CONNECTIONS",
+      catagory: "Moniter",
+    },
+
+    {
+      id: 35,
+      name: "Rolex Oyster Perpetual Date Watch",
+      img: "https://i.postimg.cc/8zMtDj1D/shopping-19.webp",
+      amt: 109999.99,
+      seller: "HI-FI CORP",
+      catagory: "Accessories",
+    },
+  
+    {
+      id: 36,
+      name: " Xbox 360 Black Slim",
+      img: "https://i.postimg.cc/Pr3Qj1GB/shopping-22.webp",
+      amt: 999.99,
+      seller: "WOOLWORTHS",
+      catagory: "Console",
+    },
+
+    {
+      id: 38,
+      name: "Razer Blade 14inch QHD 165Hz Laptop, AMD Ryzen 9",
+      img: "https://i.postimg.cc/PrmtwQyw/shopping-15.webp",
+      amt: 32499.99,
+      seller: "ASUS STORE",
+      catagory: "Laptop",
+    },
+
+    {
+      id: 39,
+      name: "Lenovo Legion Pro 7 Gaming Laptop, 16inch",
+      img: "https://i.postimg.cc/90kqwtYS/shopping-17.webp",
+      amt: 66999.99,
+      seller: "APPLE STORE",
+      catagory: "Laptop",
+    },
+  
+    {
+      id: 40,
+      name: "Asus GeForce RTX 2080 Super Dual OC Evo V2",
+      img: "https://i.postimg.cc/YCfhM3gR/shopping-14.webp",
+      amt: 499.99,
+      seller: "INCREDIBLE CONNECTIONS",
+      catagory: "Graphics Card",
+    },
+  
+    {
+      id: 42,
+      name: "Nike Air Force 1 Red Rose Custom Low",
+      img: "https://i.postimg.cc/nc4WkjBg/shopping-12.webp",
+      amt: 2999.99,
+      seller: "MACRO",
+      catagory: "Shoes",
+    },
+
+    {
+      id: 44,
+      name: "Xbox 360 Wireless Controller | Black",
+      img: "https://i.postimg.cc/LsNHC4gB/shopping-25.webp",
+      amt: 299.99,
+      seller: "GAME",
+      catagory: "Controller",
+    },
+
+    {
+      id: 45,
+      name: "Viprtech Avalanche Gaming PC (Ryzen 5 16Gb Ddr4)",
+      img: "https://i.postimg.cc/kM6ymfFK/shopping-32.webp",
+      amt: 9999.99,
+      seller: "INCREDIBLE CONNECTIONS",
+      catagory: "Desktop",
+    },
+  
+    {
+      id: 46,
+      name: "Samsung Galaxy S23 Ultra 512GB",
+      img: "https://i.postimg.cc/zGpQgygN/shopping-29.webp",
+      amt: 21999.99,
+      seller: "PEP STORES",
+      catagory: "Phone",
+    },
+
+    {
+      id: 48,
+      name: "Sony PS3 DualShock 3 Black Wireless",
+      img: "https://i.postimg.cc/MTLzwsDn/shopping-24.webp",
+      amt: 299.99,
+      seller: "MACRO",
+      catagory: "Controller",
+    },
+
+    {
+      id: 50,
+      name: "LOGITECH - MX ANYWHERE 3 WIRELESS MOUSE",
+      img: "https://i.postimg.cc/3r9wSBmQ/shopping-21.webp",
+      amt: 1199.99,
+      seller: "PEP STORES",
+      catagory: "Mouse",
+    },
+
+    {
+      id: 51,
+      name: "DarkAlien K710 Mechanical Gaming Keyboard",
+      img: "https://i.postimg.cc/HxSWvYR1/shopping-31.webp",
+      amt: 999.99,
+      seller: "INCREIBLE CONNECTIONS",
+      catagory: "KeyBoard",
+    },
+
+    {
+      id: 55,
+      name: "Frost NYC Mens Watch - Skeleton Sport Gold",
+      img: "https://i.postimg.cc/J46WJYJt/shopping-18.webp",
+      amt: 199999.99,
+      seller: "HI-FI CORP",
+      catagory: "Accessories",
+    },
+  
+    {
+      id: 56,
+      name: "Sony PlayStation 3 80GB Black ",
+      img: "https://i.postimg.cc/X77kmQPf/shopping-23.webp",
+      amt: 999.99,
+      seller: "WOOLWORTHS",
+      catagory: "Console",
+    },
+  
+    {
+      id: 57,
+      name: "PCBUILDER 5500 GTX1650 16GB 1TB W11H - Bundle",
+      img: "https://i.postimg.cc/d1zr3cmd/shopping-33.webp",
+      amt: 11499.99,
+      seller: "GAME",
+      catagory: "Desktop",
+    },
+
+    {
+      id: 58,
+      name: "ROG Zephyrus Duo 16 Ryzen 9 32GB 1TB SSD",
+      img: "https://i.postimg.cc/vHRYTNry/shopping-16.webp",
+      amt: 64999.99,
+      seller: "ASUS STORE",
+      catagory: "Laptop",
+    },
+
+    {
+      id: 59,
+      name: "Nike - Air Mag Back To The Future sneakers ",
+      img: "https://i.postimg.cc/VLn1nkKH/shopping-10.webp",
+      amt: 704999.99,
+      seller: "APPLE STORE",
+      catagory: "Shoes",
+    },
+  
+    {
+      id: 60,
+      name: "Arktek Nvidia GT750Ti 2GB GDDR5 128-bit",
+      img: "https://i.postimg.cc/QMfGq9Gh/shopping-13.webp",
+      amt: 2599.99,
+      seller: "INCREDIBLE CONNECTIONS",
+      catagory: "Graphics Card",
+    },
   ];
   
-  const productsContainer = document.querySelector(".products");
-  const categoryList = document.querySelector(".category-list");
+  let productsContainer = document.querySelector(".products");
+  let categoryList = document.querySelector(".category-list");
   
   function displayProducts(products) {
     if (products.length > 0) {
-      const product_details = products
+      let product_details = products
         .map(
           (product) => `
     <div class="product">
@@ -211,16 +501,16 @@ const data = [
   }
 
   function addToCart(id) {
-    const product = data.find((item) => item.id === id);
-    const cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+    let product = data.find((item) => item.id === id);
+    let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
     cart.push(product);
     localStorage.setItem("cart", JSON.stringify(cart));
 }
   
   function setCategories() {
-    const allCategories = data.map((product) => product.catagory);
+    let allCategories = data.map((product) => product.catagory);
     //console.log(allCategories);
-    const catagories = [
+    let catagories = [
       "All",
       ...allCategories.filter((product, index) => {
         return allCategories.indexOf(product) === index;
@@ -230,17 +520,17 @@ const data = [
     categoryList.innerHTML = catagories.map((catagory) => `<li>${catagory}</li>`).join("");
   
     categoryList.addEventListener("click", (e) => {
-      const selectedCatagory = e.target.textContent;
+      let selectedCatagory = e.target.textContent;
       selectedCatagory === "All" ? displayProducts(data) : displayProducts(data.filter((product) => product.catagory == selectedCatagory));
     });
   }
-  const priceRange = document.querySelector("#priceRange");
-  const priceValue = document.querySelector(".priceValue");
+  let priceRange = document.querySelector("#priceRange");
+  let priceValue = document.querySelector(".priceValue");
   
   function setPrices() {
-    const priceList = data.map((product) => product.amt);
-    const minPrice = Math.min(...priceList);
-    const maxPrice = Math.max(...priceList);
+    let priceList = data.map((product) => product.amt);
+    let minPrice = Math.min(...priceList);
+    let maxPrice = Math.max(...priceList);
     priceRange.min = minPrice;
     priceRange.max = maxPrice;
     priceValue.textContent = "R" + maxPrice;
@@ -251,9 +541,9 @@ const data = [
     });
   }
   
-  const txtSearch = document.querySelector("#txtSearch");
+  let txtSearch = document.querySelector("#txtSearch");
   txtSearch.addEventListener("keyup", (e) => {
-    const value = e.target.value.toLowerCase().trim();
+    let value = e.target.value.toLowerCase().trim();
     if (value) {
       displayProducts(data.filter((product) => product.name.toLowerCase().indexOf(value) !== -1));
     } else {

@@ -1,8 +1,8 @@
 function loadCart() {
-    const cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+    let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
     let totalPrice = 0;
 
-    const cartItems = cart.map((item) => {
+    let cartItems = cart.map((item) => {
         totalPrice += item.amt;
         return `<li><img src="${item.img}" alt="${item.name}" width="70" height="70"> ${item.name} - R${item.amt}
             <button onclick="removeItem(${item.id})">Remove</button>
@@ -24,9 +24,10 @@ function clearCart() {
 
 // Function to remove an item from the cart
 function removeItem(id) {
-    const cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
-    const updatedCart = cart.filter(item => item.id !== id);
+    let cart = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
+    let updatedCart = cart.filter(item => item.id !== id);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     loadCart();
 }
 
+// ===============MODAL================\\
