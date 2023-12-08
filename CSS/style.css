@@ -153,6 +153,18 @@ header {
 
 
 /* ========= SUBSCRIBE SECTION ========== */
+
+.welcome {
+  text-align: center;
+  color: hsl(9, 94%, 61%);
+  
+}
+.welcome:hover {
+  color: #ddd;
+  transition: 3s ease-in-out;
+}
+
+
 .section-5 {
   display: flex;
   flex-direction: column;
