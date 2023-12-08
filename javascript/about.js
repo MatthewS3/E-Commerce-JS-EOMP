@@ -41,3 +41,5 @@ let renderCard = () => {
 setTimeout(() => {
   renderCard();
 }, 1000);
+
+//============= SPINNER =============\\
