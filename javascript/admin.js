@@ -1,5 +1,5 @@
-const productList = document.getElementById('productList');
-        const addProductForm = document.getElementById('addProductForm');
+let productList = document.getElementById('productList');
+        let addProductForm = document.getElementById('addProductForm');
 
         // Retrieve stored products from local storage
         let products = JSON.parse(localStorage.getItem('products')) || [];
@@ -8,17 +8,17 @@ const productList = document.getElementById('productList');
         loadProducts();
 
         function addProduct() {
-            const productName = document.getElementById('productName').value;
-            const productPrice = parseFloat(document.getElementById('productPrice').value);
-            const productQuantity = parseFloat(document.getElementById('productQuantity').value);
-            const productUrl = (document.getElementById('productImage').value);
+            let productName = document.getElementById('productName').value;
+            let productPrice = parseFloat(document.getElementById('productPrice').value);
+            let productQuantity = parseFloat(document.getElementById('productQuantity').value);
+            let productUrl = (document.getElementById('productImage').value);
 
             if (!productName || isNaN(productPrice) || isNaN(productQuantity) || !productUrl) {
                 alert('Please enter valid product details.');
                 return;
             }
 
-            const productItem = document.createElement('li');
+            let productItem = document.createElement('li');
             productItem.className = 'product';
             productItem.innerHTML = `
                 <span>${productName}</span>
@@ -39,33 +39,65 @@ const productList = document.getElementById('productList');
         }
 
         function deleteProduct(button) {
-            const listItem = button.parentNode;
+            let listItem = button.parentNode;
             productList.removeChild(listItem);
 
             // Find and remove the product from the products array and update local storage
-            const productName = listItem.getElementsByTagName('span')[0].innerText.split(' - ')[0];
+            let productName = listItem.getElementsByTagName('span')[0].innerText.split(' - ')[0];
             products = products.filter(product => product.productName !== productName);
             localStorage.setItem('products', JSON.stringify(products));
         }
 
-        
+        function editProduct(button) {
+            let listItem = button.parentNode;
+            let productName = listItem.getElementsByTagName('span')[0].innerText;
+            let productPrice = listItem.getElementsByTagName('span')[1].innerText.substring(1);
+            let productQuantity = listItem.getElementsByTagName('span')[2].innerText;
+            let productUrl = listItem.getElementsByTagName('img')[0].src;
+
+            // Prompt user to edit product details
+            let newProductName = prompt('Enter the new product name:', productName);
+            let newProductPrice = prompt('Enter the new product price:', productPrice);
+            let newProductQuantity = prompt('Enter the new product quantity:', productQuantity);
+            let newProductUrl = prompt('Enter the new product image URL:', productUrl);
+
+            if (newProductName && newProductPrice && newProductQuantity && newProductUrl) {
+                // Update product details in the list
+                listItem.getElementsByTagName('span')[0].innerText = newProductName;
+                listItem.getElementsByTagName('span')[1].innerText = 'R' + newProductPrice.toFixed(2);
+                listItem.getElementsByTagName('span')[2].innerText = newProductQuantity;
+                listItem.getElementsByTagName('img')[0].src = newProductUrl;
+
+                // Update products array and local storage
+                for (let i = 0; i < products.length; i++) {
+                    if (products[i].productName === productName) {
+                        products[i].productName = newProductName;
+                        products[i].productPrice = parseFloat(newProductPrice);
+                        products[i].productQuantity = parseFloat(newProductQuantity);
+                        products[i].productUrl = newProductUrl;
+                        break;
+                    }
+                }
+                localStorage.setItem('products', JSON.stringify(products));
+            }
+        }
 
         function loadProducts() {
             // Clear the product list
             productList.innerHTML = '';
 
-            // Add each product to the product list
-            products.forEach(product => {
-                const productItem = document.createElement('li');
+            // Load each product into the product list
+            for (let i = 0; i < products.length; i++) {
+                let productItem = document.createElement('li');
                 productItem.className = 'product';
                 productItem.innerHTML = `
-                <span>${product.productName}</span>
-                <span>R${product.productPrice.toFixed(2)}</span> 
-                <span>${product.productQuantity.toFixed(0)}</span> 
-                <span><img src="${product.productUrl}" width:"50" height:"50"></span>
-                <button class="delete-btn" onclick="deleteProduct(this)">Delete</button>
-                <button class="edit-btn" onclick="editProduct(this)">Edit</button>
+                    <span>${products[i].productName}</span>
+                    <span>R${products[i].productPrice.toFixed(2)}</span> 
+                    <span>${products[i].productQuantity.toFixed(0)}</span> 
+                    <span><img src="${products[i].productUrl}" width:"50" height:"50"></span>
+                    <button class="delete-btn" onclick="deleteProduct(this)">Delete</button>
+                    <button class="edit-btn" onclick="editProduct(this)">Edit</button>
                 `;
                 productList.appendChild(productItem);
-            });
+            }
         }

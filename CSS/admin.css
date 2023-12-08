@@ -42,8 +42,8 @@ header {
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 120px;
 }
 
 .product {
@@ -60,6 +60,45 @@ img {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 50px;
+}
+
+.delete-btn:hover {
+  background-color: red;
+  border: 2px solid rgb(0, 0, 0);
+  color: black;
+  transition: 1s;
+}
+
+#APbtn {
+  background-color: hsl(9, 94%, 61%);
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+
+#APbtn:hover {
+  background-color: #ddd;
+  transition: 1s;
+}
+
+.edit-btn {
+  background-color: yellowgreen;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+
+.edit-btn:hover {
+  background-color: green;
+  transition: 1s;
 }
 
 #addProductForm {

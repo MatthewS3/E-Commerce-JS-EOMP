@@ -31,7 +31,7 @@
                 <div class="contact-child child1">
                     <p>
                         <i class="fas fa-map-marker-alt"></i> Address <br />
-                        <span> 123 Something Road, Camps Bay
+                        <span> 123 Victoria Road, Grassy Park
                             <br />
                             Cape Town, SA
                         </span>
@@ -39,7 +39,7 @@
 
                     <p>
                         <i class="fas fa-phone-alt"></i> Let's Talk <br />
-                        <span> 0787878787</span>
+                        <span> +27 01 011 0011</span>
                     </p>
 
                     <p>
@@ -51,23 +51,18 @@
                 <div class="contact-child child2">
                     <div class="inside-contact">
                         <h2>Contact Us</h2>
-                        <h3>
-                           <span id="confirm">
-                        </h3>
-
-                        <p>Name *</p>
-                        <input id="txt_name" type="text" Required="required">
-
-                        <p>Email *</p>
-                        <input id="txt_email" type="text" Required="required">
-
-                        <p>Phone *</p>
-                        <input id="txt_phone" type="text" Required="required">
-
-                        <p>Message *</p>
-                        <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
-                        
-                        <input type="submit" id="btn_send" value="SEND">
+                          <form action="https://formspree.io/f/xbjvnykg" method="post">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Name & Surname" required>
+                            <label for="Email">Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Example@gmail.com" required>
+                            <label for="Email">Cell-Number:</label>
+                            <input type="phone" id="number" name="number" placeholder="000 000 0000" required>
+                          <div class="messageBox">
+                              <textarea id="text" id="Message"  rows="4" cols="20" placeholder="Leave Us a Message" Required="required" ></textarea>
+                          </div>
+                          <h3><button type="submit" class="btn11" >Contact Us</button></h3>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -91,24 +86,24 @@
     
             </ul>
             <ul class="box">
-              <li class="link_name">Recommended</li>
-              <li><a href="{% url 'category' 6 %}">India</a></li>
-              <li><a href="{% url 'category' 5 %}">Art and Culture</a></li>
-              <li><a href="{% url 'category' 11 %}">People</a></li>
-              <li><a href="{% url 'category' 2 %}">Travel</a></li>
+              <li class="link_name">Project Platforms</li>
+              <li><a href="{}">HTML</a></li>
+              <li><a href="{}">CSS</a></li>
+              <li><a href="{}">JAVASCRIPT</a></li>
+              <li><a href="{}">BOOTSTRAP</a></li>
     
             </ul>
             <ul class="box">
               <li class="link_name">Legal Info</li>
-              <li><a href="{% url 'licence' %}">Licence</a></li>
-              <li><a href="{% url 'terms' %}">Terms and Conditions</a></li>
-              <li><a href="{% url 'privacy' %}">Privacy Policies</a></li>
+              <li><a href="{}">Licence</a></li>
+              <li><a href="{}">Terms and Conditions</a></li>
+              <li><a href="{}">Privacy Policies</a></li>
     
             </ul>
             <ul class="box">
               <li class="link_name">Contact</li>
-              <li><a target="on_blank" href="tel:+919079680135">+91 9079680135</a></li>
-              <li><a target="on_blank" href="mailto:'connectpicoindia@gmail.com'">contactpicoindia@gmail.com</a></li>
+              <li><a target="on_blank" href="tel:+919079680135">+27 011 011 0011</a></li>
+              <li><a target="on_blank" href="mailto:'connectpicoindia@gmail.com'">TakeAlittle@gmail.com</a></li>
             </ul>
           </div>
         </div>

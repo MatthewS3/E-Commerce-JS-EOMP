@@ -1,13 +1,13 @@
-const cardImages = document.querySelectorAll(".card-image");
-const cardTitles = document.querySelectorAll(".card-title");
-const cardDescriptions = document.querySelectorAll(".card-description");
-const cardMediaIcons = document.querySelectorAll(".card-mediaIcons a");
-const cardImgs = document.querySelectorAll(".card-image img");
-const cardTitleSpans = document.querySelectorAll(".card-title span");
-const cardDescSpans = document.querySelectorAll(".card-description span");
-const mediaIcons = document.querySelectorAll(".card-mediaIcons a i");
+let cardImages = document.querySelectorAll(".card-image");
+let cardTitles = document.querySelectorAll(".card-title");
+let cardDescriptions = document.querySelectorAll(".card-description");
+let cardMediaIcons = document.querySelectorAll(".card-mediaIcons a");
+let cardImgs = document.querySelectorAll(".card-image img");
+let cardTitleSpans = document.querySelectorAll(".card-title span");
+let cardDescSpans = document.querySelectorAll(".card-description span");
+let mediaIcons = document.querySelectorAll(".card-mediaIcons a i");
 
-const renderCard = () => {
+let renderCard = () => {
   //Remove the skeleton loading effect
   cardImages.forEach((cardImage) => {
     cardImage.classList.remove("loading");
